@@ -1,0 +1,81 @@
+.slash-command-popup {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.dark .slash-command-popup {
+  background: #1f2937;
+  border-color: #374151;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.slash-command-list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.slash-command-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.1s ease;
+}
+
+.slash-command-item:hover,
+.slash-command-item.selected {
+  background-color: #f3f4f6;
+}
+
+.dark .slash-command-item:hover,
+.dark .slash-command-item.selected {
+  background-color: #374151;
+}
+
+.slash-command-item .icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f3f4f6;
+  border-radius: 4px;
+  margin-right: 12px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.dark .slash-command-item .icon {
+  background-color: #374151;
+  color: #9ca3af;
+}
+
+.slash-command-item .content {
+  flex: 1;
+}
+
+.slash-command-item .title {
+  font-weight: 500;
+  font-size: 14px;
+  color: #111827;
+  margin-bottom: 2px;
+}
+
+.dark .slash-command-item .title {
+  color: #f9fafb;
+}
+
+.slash-command-item .description {
+  font-size: 12px;
+  color: #6b7280;
+}
+
+.dark .slash-command-item .description {
+  color: #9ca3af;
+}
